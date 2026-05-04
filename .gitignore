@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+logs/
+*.egg-info/
+data/runs/
+*.json.bak
+config.yaml
+google_token.json
+~/.crm-review/
+.DS_Store
