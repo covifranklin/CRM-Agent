@@ -1,0 +1,29 @@
+# CRM Agent — configuration template
+# Copy to config.yaml and fill in real values. Never commit config.yaml.
+
+anthropic_api_key: "YOUR_ANTHROPIC_API_KEY"
+
+# Google Sheets
+spreadsheet_id: "YOUR_GOOGLE_SPREADSHEET_ID"
+worksheet_name: "Contacts"
+
+# Obsidian vault
+vault_path: "/path/to/your/obsidian/vault"
+
+# Identity context passed to the review agent
+user_name: "Covi"
+user_role: "Founder"
+client_context_filter: "Restoractive"   # filters which contacts are in scope
+
+# Cost guard — run aborts if cumulative LLM spend exceeds this
+max_llm_cost_usd: 1.00
+
+# Optional: directory for --export-snapshot output
+# csv_path: "/path/to/export/directory"
+
+# Anthropic model to use
+model: "claude-sonnet-4-6"
+
+# Per-token pricing (used for cost tracking — update if model changes)
+input_token_price_per_1k: 0.003
+output_token_price_per_1k: 0.015
